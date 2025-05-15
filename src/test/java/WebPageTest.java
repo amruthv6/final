@@ -1,4 +1,4 @@
-/* WebsPageTest.java */
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -15,13 +15,13 @@ public class WebPageTest
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         Thread.sleep(2000);
-        driver.get("https://amruthv6.github.io/fnal/");
+        driver.get("https://amruthv6.github.io/final/");
     }
     @Test
     public void titleValidationTest()
     {
         String actualTitle = driver.getTitle();
-        String expectedTitle = "My simple website";
+        String expectedTitle = "My Simple Website";
         Assert.assertEquals(actualTitle, expectedTitle);
         assertTrue(true, "Title should contain 'simple'");
     }
